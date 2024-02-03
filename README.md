@@ -1,6 +1,6 @@
 # Compact-X25519-rs
-This library is a compact, zero-dependencies, single-file and almost no-std implementation of X25519.  
-这个库是一个 X25519 的紧凑的、零依赖的、单文件的、几乎 no-std 的实现。
+This library is a compact, zero-dependencies, single-file and no-std implementation of X25519.  
+这个库是一个 X25519 的紧凑的、零依赖的、单文件的、no-std 的实现。
 
 Transcibe from https://github.com/DavyLandman/compact25519.  
 转写自 https://github.com/DavyLandman/compact25519 。
@@ -21,6 +21,10 @@ It does not require Cargo, nevertheless it is released as a Cargo package.
 
 I don't want to publish it to crate.io now.  
 我目前不想将其发布到 Crate.io 。
+
+# No-std
+If you want to use no-std version, remove `fn key_to_vec` and `mod tests`.  
+如果你想使用 no-std 版本，删除 `fn key_to_vec` 和 `mod tests` 即可。
 
 # Origins / 起源
 Daniel Beer made the Python implementation, Davy Landman made the C transcibe. They released it under the public domain. To remain in the same spirit, this library is also licensed as Public Domain using the CC0 license.  
